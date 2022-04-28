@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #100a1c;
+    background-image: radial-gradient(50% 30% ellipse at center top, $tertiary-color, rgba(0, 0, 0, 0) 100%),
+        radial-gradient(60% 50% ellipse at center bottom, $quaternary-color, #100a1c 100%);
+    background-attachment: fixed;
+    color: #6cacc5;
+}

@@ -1,0 +1,11 @@
+
+ @keyframes mirror {
+    100% {
+      transform: translateX(-450px);
+    }
+  }
+  @keyframes move {
+    100% {
+      transform: translateY(-100vh);
+    }
+  }

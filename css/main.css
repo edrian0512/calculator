@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #100a1c;
+  background-image: radial-gradient(50% 30% ellipse at center top, rgba(41, 35, 73, 0.2), rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #411816 0%, #100a1c 100%);
+  background-attachment: fixed;
+  color: #6cacc5;
+}
+
+@-webkit-keyframes mirror {
+  100% {
+    transform: translateX(-450px);
+  }
+}
+
+@keyframes mirror {
+  100% {
+    transform: translateX(-450px);
+  }
+}
+@-webkit-keyframes move {
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes move {
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+.bubbles {
+  position: fixed;
+  bottom: -100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.bubbles span {
+  height: 50px;
+  width: 50px;
+  background: rgba(41, 35, 73, 0.1);
+  -webkit-animation: move 10s linear infinite;
+          animation: move 10s linear infinite;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.bubbles span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 40%;
+  transform: skew(45deg) translateX(150px);
+  background: rgb(41, 35, 73) 0%;
+  -webkit-animation: mirror 3s linear infinite;
+          animation: mirror 3s linear infinite;
+}
+
+.bubbles span.one {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  transform: scale(2.15);
+}
+.bubbles span.one:before {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.bubbles span.two {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  transform: scale(1.55);
+}
+.bubbles span.two:before {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.bubbles span.three {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  transform: scale(0.35);
+}
+.bubbles span.three:before {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.bubbles span.four {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  transform: scale(2.15);
+}
+.bubbles span.four:before {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+
+.bubbles span.five {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  transform: scale(0.5);
+}
+.bubbles span.five:before {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.bubbles span.six {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  transform: scale(2.5);
+}
+.bubbles span.six:before {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.bubbles span.seven {
+  -webkit-animation-delay: 3;
+          animation-delay: 3;
+  transform: scale(1.5);
+}
+.bubbles span.seven:before {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.bubbles span.eight {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  transform: scale(1.5);
+}
+.bubbles span.eight:before {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+body {
+  color: #6cacc5;
+  font-weight: 300;
+  font-size: 18px/1.6;
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+span {
+  color: #ff652f;
+}
+
+.display {
+  height: 70px;
+  text-align: right;
+  font-size: 30px;
+  padding: 15px;
+  border: 5px solid rgba(41, 35, 73, 0.2);
+  border-radius: 10px;
+}
+
+#btnNew {
+  width: 150px;
+}
+
+.table_container {
+  margin: 120px auto;
+  width: auto;
+  height: auto;
+}
+.table_container .logo {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.table_container button {
+  border: 0;
+  background: rgba(42, 50, 113, 0.28);
+  color: #6cacc5;
+  cursor: pointer;
+  font-size: 22px;
+  margin: 0.25em;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  transition: all 0.5s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.table_container button:hover {
+  background: #201e40;
+}
+.table_container button:focus {
+  outline: 0;
+}
